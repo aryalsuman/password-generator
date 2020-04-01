@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Handlee', cursive;
+            font-size: 25px;
+
+
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{%url 'homepage'%}">Password Generator</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{%url 'homepage'%}">Home</a></li>
+                <li><a href="{%url 'about'%}">About US</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <center style="margin-top: 60px;">
+        <h1>Password Generator</h1>
+        <form action={%url 'password' %}>
+            <label for="l">Enter Length of Password</label> <input type="number" value='12' name="length" min="1"
+                max="50" id="l">
+            <br><input type="checkbox" name="number" id="" x-webkit-speech> Number
+            <br> <input type="checkbox" name="symbols" id=""> Symbols
+            <br> <input type="checkbox" name="uppercase" id=""> Uppercase
+            <br>
+            <input type="submit" value="Generate Now">
+        </form>
+    </center>
+</body>
+
+
+</html>

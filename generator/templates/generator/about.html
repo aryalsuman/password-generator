@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Handlee', cursive;
+            font-size: 25px;
+
+
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{%url 'homepage'%}">Password Generator</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="{%url 'homepage'%}">Home</a></li>
+                <li class="active"><a href="{%url 'about'%}">About US</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <center>
+        <blockquote>
+            <p> This is password generator which generator password according to different checklist. This is intial
+                phase
+                of
+                this password generator.It is supported by Django and uses random module.</p>
+        </blockquote>
+        <footer>From Creater Suman Aryal :)</footer>
+    </center>
+</body>
+
+
+</html>
